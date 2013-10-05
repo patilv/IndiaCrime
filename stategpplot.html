@@ -1,0 +1,144 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://dimplejs.org/dist/dimple.v1.min.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 700px;
+      height: 475px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart2018440714e1' class='rChart dimple'></div>  
+    
+    <script type="text/javascript">
+(function(){
+  var opts = {
+ "dom": "chart2018440714e1",
+"width":    700,
+"height":    475,
+"x": "StateUT",
+"y": "kmeansdata.cluster",
+"groups": "kmeansdata.cluster",
+"type": "bar",
+"bounds": {
+ "x":     50,
+"y":     10,
+"width":    600,
+"height":    300 
+},
+"id": "chart2018440714e1" 
+},
+    data = [{"StateUT":"Andhra Pradesh","Rape":1341,"KidnappingAndAbduction":1403,"DowryDeaths":504,"AssaultWithIntentToOutrageModesty":4816,"InsultToModesty":3714,"CrueltyByHusbandOrHisRelatives":13389,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":472,"DowryProhibitionAct":2511,"IndecentRepresentationOfWomenPAct":21,"kmeansdata.cluster":3},{"StateUT":"Arunachal Pradesh","Rape":46,"KidnappingAndAbduction":58,"DowryDeaths":1,"AssaultWithIntentToOutrageModesty":67,"InsultToModesty":2,"CrueltyByHusbandOrHisRelatives":26,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":1,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Assam","Rape":1716,"KidnappingAndAbduction":3360,"DowryDeaths":140,"AssaultWithIntentToOutrageModesty":1840,"InsultToModesty":5,"CrueltyByHusbandOrHisRelatives":6407,"ImportationOfGirlsFromForeignCountry":2,"ImmoralTrafficPAct":30,"DowryProhibitionAct":41,"IndecentRepresentationOfWomenPAct":3,"kmeansdata.cluster":1},{"StateUT":"Bihar","Rape":927,"KidnappingAndAbduction":3789,"DowryDeaths":1275,"AssaultWithIntentToOutrageModesty":118,"InsultToModesty":37,"CrueltyByHusbandOrHisRelatives":3686,"ImportationOfGirlsFromForeignCountry":4,"ImmoralTrafficPAct":35,"DowryProhibitionAct":1353,"IndecentRepresentationOfWomenPAct":5,"kmeansdata.cluster":1},{"StateUT":"Chhattisgarh","Rape":1034,"KidnappingAndAbduction":350,"DowryDeaths":81,"AssaultWithIntentToOutrageModesty":1601,"InsultToModesty":162,"CrueltyByHusbandOrHisRelatives":980,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":5,"DowryProhibitionAct":14,"IndecentRepresentationOfWomenPAct":1,"kmeansdata.cluster":5},{"StateUT":"Goa","Rape":55,"KidnappingAndAbduction":16,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":49,"InsultToModesty":16,"CrueltyByHusbandOrHisRelatives":24,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":40,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Gujarat","Rape":473,"KidnappingAndAbduction":1527,"DowryDeaths":21,"AssaultWithIntentToOutrageModesty":745,"InsultToModesty":93,"CrueltyByHusbandOrHisRelatives":6658,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":44,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":1},{"StateUT":"Haryana","Rape":668,"KidnappingAndAbduction":900,"DowryDeaths":258,"AssaultWithIntentToOutrageModesty":525,"InsultToModesty":434,"CrueltyByHusbandOrHisRelatives":3137,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":69,"DowryProhibitionAct":9,"IndecentRepresentationOfWomenPAct":2,"kmeansdata.cluster":5},{"StateUT":"Himachal Pradesh","Rape":183,"KidnappingAndAbduction":152,"DowryDeaths":2,"AssaultWithIntentToOutrageModesty":250,"InsultToModesty":68,"CrueltyByHusbandOrHisRelatives":251,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":6,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Jammu and Kashmir","Rape":303,"KidnappingAndAbduction":1041,"DowryDeaths":8,"AssaultWithIntentToOutrageModesty":1322,"InsultToModesty":347,"CrueltyByHusbandOrHisRelatives":301,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":3,"DowryProhibitionAct":3,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":5},{"StateUT":"Jharkhand","Rape":812,"KidnappingAndAbduction":786,"DowryDeaths":302,"AssaultWithIntentToOutrageModesty":284,"InsultToModesty":10,"CrueltyByHusbandOrHisRelatives":1261,"ImportationOfGirlsFromForeignCountry":3,"ImmoralTrafficPAct":12,"DowryProhibitionAct":1066,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":5},{"StateUT":"Karnataka","Rape":621,"KidnappingAndAbduction":1070,"DowryDeaths":218,"AssaultWithIntentToOutrageModesty":2978,"InsultToModesty":100,"CrueltyByHusbandOrHisRelatives":3684,"ImportationOfGirlsFromForeignCountry":32,"ImmoralTrafficPAct":335,"DowryProhibitionAct":1328,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":2},{"StateUT":"Kerala","Rape":1019,"KidnappingAndAbduction":214,"DowryDeaths":32,"AssaultWithIntentToOutrageModesty":3735,"InsultToModesty":498,"CrueltyByHusbandOrHisRelatives":5216,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":210,"DowryProhibitionAct":3,"IndecentRepresentationOfWomenPAct":3,"kmeansdata.cluster":2},{"StateUT":"Madhya Pradesh","Rape":3425,"KidnappingAndAbduction":1127,"DowryDeaths":743,"AssaultWithIntentToOutrageModesty":6655,"InsultToModesty":774,"CrueltyByHusbandOrHisRelatives":3988,"ImportationOfGirlsFromForeignCountry":6,"ImmoralTrafficPAct":13,"DowryProhibitionAct":101,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":2},{"StateUT":"Maharashtra","Rape":1839,"KidnappingAndAbduction":1140,"DowryDeaths":329,"AssaultWithIntentToOutrageModesty":3935,"InsultToModesty":1294,"CrueltyByHusbandOrHisRelatives":7415,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":366,"DowryProhibitionAct":33,"IndecentRepresentationOfWomenPAct":2,"kmeansdata.cluster":2},{"StateUT":"Manipur","Rape":63,"KidnappingAndAbduction":133,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":49,"InsultToModesty":1,"CrueltyByHusbandOrHisRelatives":43,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":15,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Meghalaya","Rape":164,"KidnappingAndAbduction":24,"DowryDeaths":1,"AssaultWithIntentToOutrageModesty":43,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":16,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":7,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Mizoram","Rape":103,"KidnappingAndAbduction":3,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":85,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":8,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Nagaland","Rape":21,"KidnappingAndAbduction":10,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":16,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":0,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":4,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Orissa","Rape":1458,"KidnappingAndAbduction":1364,"DowryDeaths":525,"AssaultWithIntentToOutrageModesty":4187,"InsultToModesty":304,"CrueltyByHusbandOrHisRelatives":2638,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":24,"DowryProhibitionAct":1487,"IndecentRepresentationOfWomenPAct":1,"kmeansdata.cluster":2},{"StateUT":"Punjab","Rape":680,"KidnappingAndAbduction":689,"DowryDeaths":118,"AssaultWithIntentToOutrageModesty":340,"InsultToModesty":31,"CrueltyByHusbandOrHisRelatives":1293,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":86,"DowryProhibitionAct":1,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":5},{"StateUT":"Rajasthan","Rape":2049,"KidnappingAndAbduction":2697,"DowryDeaths":478,"AssaultWithIntentToOutrageModesty":2352,"InsultToModesty":18,"CrueltyByHusbandOrHisRelatives":13312,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":99,"DowryProhibitionAct":39,"IndecentRepresentationOfWomenPAct":62,"kmeansdata.cluster":3},{"StateUT":"Sikkim","Rape":34,"KidnappingAndAbduction":10,"DowryDeaths":1,"AssaultWithIntentToOutrageModesty":19,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":4,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Tamil Nadu","Rape":737,"KidnappingAndAbduction":1693,"DowryDeaths":110,"AssaultWithIntentToOutrageModesty":1494,"InsultToModesty":382,"CrueltyByHusbandOrHisRelatives":1965,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":500,"DowryProhibitionAct":277,"IndecentRepresentationOfWomenPAct":34,"kmeansdata.cluster":5},{"StateUT":"Tripura","Rape":229,"KidnappingAndAbduction":114,"DowryDeaths":37,"AssaultWithIntentToOutrageModesty":314,"InsultToModesty":7,"CrueltyByHusbandOrHisRelatives":858,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Uttar Pradesh","Rape":1963,"KidnappingAndAbduction":7910,"DowryDeaths":2244,"AssaultWithIntentToOutrageModesty":3247,"InsultToModesty":8,"CrueltyByHusbandOrHisRelatives":7661,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":31,"DowryProhibitionAct":505,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":1},{"StateUT":"Uttarakhand","Rape":148,"KidnappingAndAbduction":256,"DowryDeaths":71,"AssaultWithIntentToOutrageModesty":139,"InsultToModesty":73,"CrueltyByHusbandOrHisRelatives":368,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":12,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"West Bengal","Rape":2046,"KidnappingAndAbduction":4168,"DowryDeaths":593,"AssaultWithIntentToOutrageModesty":3345,"InsultToModesty":556,"CrueltyByHusbandOrHisRelatives":19865,"ImportationOfGirlsFromForeignCountry":12,"ImmoralTrafficPAct":109,"DowryProhibitionAct":241,"IndecentRepresentationOfWomenPAct":7,"kmeansdata.cluster":3},{"StateUT":"Andaman and Nicobar Islands","Rape":12,"KidnappingAndAbduction":7,"DowryDeaths":2,"AssaultWithIntentToOutrageModesty":17,"InsultToModesty":4,"CrueltyByHusbandOrHisRelatives":5,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":2,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Chandigarh","Rape":27,"KidnappingAndAbduction":66,"DowryDeaths":5,"AssaultWithIntentToOutrageModesty":45,"InsultToModesty":25,"CrueltyByHusbandOrHisRelatives":73,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Dadra and Nagar Haveli","Rape":3,"KidnappingAndAbduction":9,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":2,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":0,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":2,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Daman and Diu","Rape":5,"KidnappingAndAbduction":0,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":0,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":3,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":3,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Delhi","Rape":706,"KidnappingAndAbduction":2160,"DowryDeaths":134,"AssaultWithIntentToOutrageModesty":727,"InsultToModesty":208,"CrueltyByHusbandOrHisRelatives":1985,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":24,"DowryProhibitionAct":15,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":5},{"StateUT":"Lakshadweep","Rape":0,"KidnappingAndAbduction":0,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":1,"InsultToModesty":0,"CrueltyByHusbandOrHisRelatives":1,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":0,"DowryProhibitionAct":0,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4},{"StateUT":"Pondicherry","Rape":13,"KidnappingAndAbduction":16,"DowryDeaths":0,"AssaultWithIntentToOutrageModesty":9,"InsultToModesty":2,"CrueltyByHusbandOrHisRelatives":6,"ImportationOfGirlsFromForeignCountry":0,"ImmoralTrafficPAct":4,"DowryProhibitionAct":11,"IndecentRepresentationOfWomenPAct":0,"kmeansdata.cluster":4}],
+    xAxis = {
+ "type": "addCategoryAxis",
+"showPercent": false,
+"orderRule": "kmeansdata.cluster" 
+},
+    yAxis = {
+ "type": "addCategoryAxis",
+"showPercent": false 
+},
+    zAxis = [],
+    colorAxis = [],
+    legend = [];
+  var svg = dimple.newSvg("#" + opts.id, opts.width, opts.height);
+
+  //data = dimple.filterData(data, "Owner", ["Aperture", "Black Mesa"])
+  var myChart = new dimple.chart(svg, data);
+  if (opts.bounds) {
+    myChart.setBounds(opts.bounds.x, opts.bounds.y, opts.bounds.width, opts.bounds.height);//myChart.setBounds(80, 30, 480, 330);
+  }
+  //dimple allows use of custom CSS with noFormats
+  if(opts.noFormats) { myChart.noFormats = opts.noFormats; };
+  //for markimekko and addAxis also have third parameter measure
+  //so need to evaluate if measure provided
+  //x axis
+  var x;
+  if(xAxis.measure) {
+    x = myChart[xAxis.type]("x",opts.x,xAxis.measure);
+  } else {
+    x = myChart[xAxis.type]("x", opts.x);
+  };
+  if(!(xAxis.type === "addPctAxis")) x.showPercent = xAxis.showPercent;
+  if (xAxis.orderRule) x.addOrderRule(xAxis.orderRule);
+  if (xAxis.grouporderRule) x.addGroupOrderRule(xAxis.grouporderRule);  
+  if (xAxis.overrideMin) x.overrideMin = xAxis.overrideMin;
+  if (xAxis.overrideMax) x.overrideMax = xAxis.overrideMax;
+  if (xAxis.overrideMax) x.overrideMax = xAxis.overrideMax;
+  if (xAxis.inputFormat) x.dateParseFormat = xAxis.inputFormat;
+  if (xAxis.outputFormat) x.tickFormat = xAxis.outputFormat;
+  //y axis
+  var y;
+  if(yAxis.measure) {
+    y = myChart[yAxis.type]("y",opts.y,yAxis.measure);
+  } else {
+    y = myChart[yAxis.type]("y", opts.y);
+  };
+  if(!(yAxis.type === "addPctAxis")) y.showPercent = yAxis.showPercent;
+  if (yAxis.orderRule) y.addOrderRule(yAxis.orderRule);
+  if (yAxis.grouporderRule) y.addGroupOrderRule(yAxis.grouporderRule);
+  if (yAxis.overrideMin) y.overrideMin = yAxis.overrideMin;
+  if (yAxis.overrideMax) y.overrideMax = yAxis.overrideMax;
+  if (yAxis.inputFormat) y.dateParseFormat = yAxis.inputFormat;
+  if (yAxis.outputFormat) y.tickFormat = yAxis.outputFormat;
+//z for bubbles
+    var z;
+  if (!(typeof(zAxis) === 'undefined') && zAxis.type){
+    if(zAxis.measure) {
+      z = myChart[zAxis.type]("z",opts.z,zAxis.measure);
+    } else {
+      z = myChart[zAxis.type]("z", opts.z);
+    };
+    if(!(zAxis.type === "addPctAxis")) z.showPercent = zAxis.showPercent;
+    if (zAxis.orderRule) z.addOrderRule(zAxis.orderRule);
+    if (zAxis.overrideMin) z.overrideMin = zAxis.overrideMin;
+    if (zAxis.overrideMax) z.overrideMax = zAxis.overrideMax;
+  }
+  if(d3.keys(colorAxis).length > 0) {
+    myChart[colorAxis.type](colorAxis.colorSeries,colorAxis.palette) ;
+  }
+  
+  //here need think I need to evaluate group and if missing do null
+  //as the first argument
+  //if provided need to use groups from opts
+  if(opts.hasOwnProperty("groups")) {
+    var s = myChart.addSeries( opts.groups, dimple.plot[opts.type] );
+    //series offers an aggregate method that we will also need to check if available
+    //options available are avg, count, max, min, sum
+    if (!(typeof(opts.aggregate) === 'undefined')) {
+      s.aggregate = eval(opts.aggregate);
+    }
+    if (!(typeof(opts.lineWeight) === 'undefined')) {
+      s.lineWeight = eval(opts.lineWeight);
+    }
+    if (!(typeof(opts.barGap) === 'undefined')) {
+      s.barGap = eval(opts.barGap);
+    }    
+  } else var s = myChart.addSeries( null, dimple.plot[opts.type] );
+  //unsure if this is best but if legend is provided (not empty) then evaluate
+  if(d3.keys(legend).length > 0) {
+    var l =myChart.addLegend();
+    d3.keys(legend).forEach(function(d){
+      l[d] = legend[d];
+    });
+  }
+  //quick way to get this going but need to make this cleaner
+  if(opts.storyboard) {
+    myChart.setStoryboard(opts.storyboard);
+  };
+  myChart.draw();
+})();
+</script>
+    
+  </body>
+</html>

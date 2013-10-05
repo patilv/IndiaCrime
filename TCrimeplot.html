@@ -1,0 +1,81 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/src/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v2.min.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/nv.d3.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 1000px;
+      height: 600px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart201879df15c9' class='rChart nvd3'></div>  
+    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart201879df15c9()
+    });
+    function drawchart201879df15c9(){  
+      var opts = {
+ "dom": "chart201879df15c9",
+"width":   1000,
+"height":    600,
+"x": "Year",
+"y": "value",
+"group": "variable",
+"type": "lineWithFocusChart",
+"id": "chart201879df15c9" 
+},
+        data = [{"Year":2001,"StateUT":"TOTAL","variable":"Rape","value":16075},{"Year":2002,"StateUT":"TOTAL","variable":"Rape","value":16373},{"Year":2003,"StateUT":"TOTAL","variable":"Rape","value":15847},{"Year":2004,"StateUT":"TOTAL","variable":"Rape","value":18233},{"Year":2005,"StateUT":"TOTAL","variable":"Rape","value":18359},{"Year":2006,"StateUT":"TOTAL","variable":"Rape","value":19348},{"Year":2007,"StateUT":"TOTAL","variable":"Rape","value":20737},{"Year":2008,"StateUT":"TOTAL","variable":"Rape","value":21467},{"Year":2009,"StateUT":"TOTAL","variable":"Rape","value":21397},{"Year":2010,"StateUT":"TOTAL","variable":"Rape","value":22172},{"Year":2011,"StateUT":"TOTAL","variable":"Rape","value":24206},{"Year":2012,"StateUT":"TOTAL","variable":"Rape","value":24923},{"Year":2001,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":14645},{"Year":2002,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":14506},{"Year":2003,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":13296},{"Year":2004,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":15578},{"Year":2005,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":15750},{"Year":2006,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":17414},{"Year":2007,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":20416},{"Year":2008,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":22939},{"Year":2009,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":25741},{"Year":2010,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":29795},{"Year":2011,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":35565},{"Year":2012,"StateUT":"TOTAL","variable":"KidnappingAndAbduction","value":38262},{"Year":2001,"StateUT":"TOTAL","variable":"DowryDeaths","value":6851},{"Year":2002,"StateUT":"TOTAL","variable":"DowryDeaths","value":6822},{"Year":2003,"StateUT":"TOTAL","variable":"DowryDeaths","value":6208},{"Year":2004,"StateUT":"TOTAL","variable":"DowryDeaths","value":7026},{"Year":2005,"StateUT":"TOTAL","variable":"DowryDeaths","value":6787},{"Year":2006,"StateUT":"TOTAL","variable":"DowryDeaths","value":7618},{"Year":2007,"StateUT":"TOTAL","variable":"DowryDeaths","value":8093},{"Year":2008,"StateUT":"TOTAL","variable":"DowryDeaths","value":8172},{"Year":2009,"StateUT":"TOTAL","variable":"DowryDeaths","value":8383},{"Year":2010,"StateUT":"TOTAL","variable":"DowryDeaths","value":8391},{"Year":2011,"StateUT":"TOTAL","variable":"DowryDeaths","value":8618},{"Year":2012,"StateUT":"TOTAL","variable":"DowryDeaths","value":8233},{"Year":2001,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":34124},{"Year":2002,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":33943},{"Year":2003,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":32939},{"Year":2004,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":34567},{"Year":2005,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":34175},{"Year":2006,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":36617},{"Year":2007,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":38734},{"Year":2008,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":40413},{"Year":2009,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":38711},{"Year":2010,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":40613},{"Year":2011,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":42968},{"Year":2012,"StateUT":"TOTAL","variable":"AssaultWithIntentToOutrageModesty","value":45351},{"Year":2001,"StateUT":"TOTAL","variable":"InsultToModesty","value":9746},{"Year":2002,"StateUT":"TOTAL","variable":"InsultToModesty","value":10155},{"Year":2003,"StateUT":"TOTAL","variable":"InsultToModesty","value":12325},{"Year":2004,"StateUT":"TOTAL","variable":"InsultToModesty","value":10001},{"Year":2005,"StateUT":"TOTAL","variable":"InsultToModesty","value":9984},{"Year":2006,"StateUT":"TOTAL","variable":"InsultToModesty","value":9966},{"Year":2007,"StateUT":"TOTAL","variable":"InsultToModesty","value":10950},{"Year":2008,"StateUT":"TOTAL","variable":"InsultToModesty","value":12214},{"Year":2009,"StateUT":"TOTAL","variable":"InsultToModesty","value":11009},{"Year":2010,"StateUT":"TOTAL","variable":"InsultToModesty","value":9961},{"Year":2011,"StateUT":"TOTAL","variable":"InsultToModesty","value":8570},{"Year":2012,"StateUT":"TOTAL","variable":"InsultToModesty","value":9173},{"Year":2001,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":49170},{"Year":2002,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":49237},{"Year":2003,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":50703},{"Year":2004,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":58121},{"Year":2005,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":58319},{"Year":2006,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":63128},{"Year":2007,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":75930},{"Year":2008,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":81344},{"Year":2009,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":89546},{"Year":2010,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":94041},{"Year":2011,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":99135},{"Year":2012,"StateUT":"TOTAL","variable":"CrueltyByHusbandOrHisRelatives","value":106527},{"Year":2001,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":114},{"Year":2002,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":76},{"Year":2003,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":46},{"Year":2004,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":89},{"Year":2005,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":149},{"Year":2006,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":67},{"Year":2007,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":61},{"Year":2008,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":67},{"Year":2009,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":48},{"Year":2010,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":36},{"Year":2011,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":80},{"Year":2012,"StateUT":"TOTAL","variable":"ImportationOfGirlsFromForeignCountry","value":59},{"Year":2001,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":8796},{"Year":2002,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":6598},{"Year":2003,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":5510},{"Year":2004,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":5748},{"Year":2005,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":5908},{"Year":2006,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":4541},{"Year":2007,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":3568},{"Year":2008,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":2660},{"Year":2009,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":2474},{"Year":2010,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":2499},{"Year":2011,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":2435},{"Year":2012,"StateUT":"TOTAL","variable":"ImmoralTrafficPAct","value":2563},{"Year":2001,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":3222},{"Year":2002,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":2816},{"Year":2003,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":2684},{"Year":2004,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":3592},{"Year":2005,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":3204},{"Year":2006,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":4504},{"Year":2007,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":5623},{"Year":2008,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":5555},{"Year":2009,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":5650},{"Year":2010,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":5182},{"Year":2011,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":6619},{"Year":2012,"StateUT":"TOTAL","variable":"DowryProhibitionAct","value":9038},{"Year":2001,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":1052},{"Year":2002,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":2508},{"Year":2003,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":1043},{"Year":2004,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":1378},{"Year":2005,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":2917},{"Year":2006,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":1562},{"Year":2007,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":1200},{"Year":2008,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":1025},{"Year":2009,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":845},{"Year":2010,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":895},{"Year":2011,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":453},{"Year":2012,"StateUT":"TOTAL","variable":"IndecentRepresentationOfWomenPAct","value":141},{"Year":2001,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2002,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2003,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2004,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2005,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":1},{"Year":2006,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2007,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2008,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":1},{"Year":2009,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2010,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2011,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":1},{"Year":2012,"StateUT":"TOTAL","variable":"CommissionOfSatiPreventionAct","value":0},{"Year":2001,"StateUT":"TOTAL","variable":"TotalCrimes","value":143795},{"Year":2002,"StateUT":"TOTAL","variable":"TotalCrimes","value":143034},{"Year":2003,"StateUT":"TOTAL","variable":"TotalCrimes","value":140601},{"Year":2004,"StateUT":"TOTAL","variable":"TotalCrimes","value":154333},{"Year":2005,"StateUT":"TOTAL","variable":"TotalCrimes","value":155553},{"Year":2006,"StateUT":"TOTAL","variable":"TotalCrimes","value":164765},{"Year":2007,"StateUT":"TOTAL","variable":"TotalCrimes","value":185312},{"Year":2008,"StateUT":"TOTAL","variable":"TotalCrimes","value":195857},{"Year":2009,"StateUT":"TOTAL","variable":"TotalCrimes","value":203804},{"Year":2010,"StateUT":"TOTAL","variable":"TotalCrimes","value":213585},{"Year":2011,"StateUT":"TOTAL","variable":"TotalCrimes","value":228650},{"Year":2012,"StateUT":"TOTAL","variable":"TotalCrimes","value":244270}]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+  </body>
+</html>

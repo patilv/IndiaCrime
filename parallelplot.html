@@ -1,0 +1,123 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 1080px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart20185e6e1b48' class='rChart parcoords'></div>  
+    
+    <script id="brushing">
+var params = {
+ "dom": "chart20185e6e1b48",
+"width":   1080,
+"height":    400,
+"padding": {
+ "top":     25,
+"left":      5,
+"bottom":     10,
+"right":      0 
+},
+"data": [
+ {
+ "Group": 1,
+"Rape": 1269.8,
+"KidnapAbduct": 4146.5,
+"DowryDeath":    920,
+"AssaultModesty": 1487.5,
+"InsultModesty":  35.75,
+"CrueltyHusband":   6103,
+"Importation":    1.5,
+"ImmoralTraffic":     35,
+"DowryProhibit": 474.75,
+"IndecentRep":      2 
+},
+{
+ "Group": 2,
+"Rape": 1672.4,
+"KidnapAbduct":    983,
+"DowryDeath":  369.4,
+"AssaultModesty":   4298,
+"InsultModesty":    594,
+"CrueltyHusband": 4588.2,
+"Importation":    7.6,
+"ImmoralTraffic":  189.6,
+"DowryProhibit":  590.4,
+"IndecentRep":    1.2 
+},
+{
+ "Group": 3,
+"Rape":   1812,
+"KidnapAbduct":   2756,
+"DowryDeath":    525,
+"AssaultModesty": 3504.3,
+"InsultModesty": 1429.3,
+"CrueltyHusband":  15522,
+"Importation":      4,
+"ImmoralTraffic": 226.67,
+"DowryProhibit": 930.33,
+"IndecentRep":     30 
+},
+{
+ "Group": 4,
+"Rape": 69.125,
+"KidnapAbduct": 54.625,
+"DowryDeath":    7.5,
+"AssaultModesty": 69.062,
+"InsultModesty": 12.375,
+"CrueltyHusband": 105.38,
+"Importation":      0,
+"ImmoralTraffic":      6,
+"DowryProhibit": 0.6875,
+"IndecentRep":      0 
+},
+{
+ "Group": 5,
+"Rape": 705.71,
+"KidnapAbduct": 1088.4,
+"DowryDeath": 144.43,
+"AssaultModesty":    899,
+"InsultModesty": 224.86,
+"CrueltyHusband": 1560.3,
+"Importation": 0.42857,
+"ImmoralTraffic": 99.857,
+"DowryProhibit": 197.86,
+"IndecentRep": 5.2857 
+} 
+],
+"colorby": "Rape",
+"range": [ 69.125,   1812 ],
+"colors": [ "red", "green" ],
+"id": "chart20185e6e1b48" 
+}
+var getColors = d3.scale.linear()
+  .domain(params.range)
+  .range(params.colors)
+  .interpolate(d3.interpolateLab);
+
+var color = function(d) { return getColors(d[params.colorby]); };
+
+  d3.parcoords()("#" + params.dom)
+    .margin(params.padding)
+    .data(params.data)
+    .color(color)
+    .alpha(0.4)
+    .render()
+    .shadows()
+    .brushable()  // enable brushing
+    .reorderable(); // enable moving axes
+</script>
+    
+  </body>
+</html>
