@@ -24,7 +24,7 @@ TCrimeplot=nPlot(value~Year, group="variable", data=TotCrimesmelt[which(TotCrime
                  height=450,width=750)
 TCrimeplot
 TCrimeplot$save("TCrimeplot.html",cdn=T)
-TCrimeplot$publish("TCrimeplot",host='gist')
+#TCrimeplot$publish("TCrimeplot",host='gist')
 
 ########################### % of crimes over years
 PCTYears=CWFull
@@ -134,11 +134,10 @@ parrstateut
 
 ###### On to Cities
 
-
 # Correlation matrix of variables
 corrmatrix<-cor(citiesCrime[c(-1)]) #store corr matrix
 corrdata=as.data.frame(corrmatrix)
-corrdata$Variable1get=names(corrdata)
+corrdata$Variable1=names(corrdata)
 corrdatamelt=melt(corrdata,id="Variable1")
 names(corrdatamelt)=c("Variable1","Variable2","CorrelationCoefficient")
 citiescorrmatplot = rPlot(Variable2 ~ Variable1, color = 'CorrelationCoefficient', data = corrdatamelt, type = 'tile', height = 600)
