@@ -127,8 +127,12 @@ parrstateut$set(data = toJSONArray(meanvars, json = F),
                 colors = c('red','green')
 )
 parrstateut$setLib("parcoords")
-parrstateut$save("parallelplotstate.html", cdn=T)
+# parrstateut$save("parallelplotstate.html", cdn=T)
 parrstateut
+#  It was tricky to get the parallel coordinates to save. Using the previous command, 
+# generate a viz of the plot, copy the source code (view html source) of the page generated, 
+# and paste it into a new text editor and save as html file. That'll take care of it. 
+#It has some links to the js libs in the parcoords folder... they have to be in place for it to work.  
 
 
 
@@ -190,8 +194,12 @@ parrcity$set(data = toJSONArray(meanvars, json = F),
                 colors = c('red','green')
 )
 parrcity$setLib("parcoords")
-parrcity$save("parrcity.html",cdn=T)
+# parrcity$save("parrcity.html",cdn=T)
 parrcity
+#  Ditto comment - It was tricky to get the parallel coordinates to save. Using the previous command, 
+# generate a viz of the plot, copy the source code (view html source) of the page generated, 
+# and paste it into a new text editor and save as html file. That'll take care of it. 
+#It has some links to the js libs in the parcoords folder... they have to be in place for it to work.  
 
 
 ##########
